@@ -43,6 +43,7 @@
         // prompted by your browser. If you see the error "The Geolocation service
         // failed.", it means you probably did not give permission for the browser to
         // locate you.
+        var x = document.getElementByID("coords"); 
         let map, infoWindow;
 
         function initMap() {
@@ -70,7 +71,7 @@
                             infoWindow.setContent("Location found.");
                             infoWindow.open(map);
                             map.setCenter(pos);
-                            var x = document.getElementByID("coords"); 
+
                             x.innerHTML = "Latitude: " + position.coords.latitude + 
                             "<br>Longitude: " + position.coords.longitude;
                         },
