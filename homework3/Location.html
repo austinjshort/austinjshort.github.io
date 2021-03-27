@@ -45,22 +45,12 @@
         // locate you.
         let map, infoWindow;
 
-        function getLocation(){
-            if (navigator.geolocation) {
-                  navigator.geolocation.getCurrentPosition();
-            } else { 
-             x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-        }
-        window.getLocation(); 
         function initMap() {
             map = new google.maps.Map(document.getElementById("map"), {
                 center: {position.coords.latitude,position.coords.longitude},
                 zoom: 6,
             });
             infoWindow = new google.maps.InfoWindow();
-        }
-            /* 
             const locationButton = document.createElement("button");
             locationButton.textContent = "Pan to Current Location";
             locationButton.classList.add("custom-map-control-button");
@@ -80,6 +70,9 @@
                             infoWindow.setContent("Location found.");
                             infoWindow.open(map);
                             map.setCenter(pos);
+                            var x = docuement.getElementByID("coords"); 
+                            x.innerHTML = "Latitude: " + position.coords.latitude + 
+                            "<br>Longitude: " + position.coords.longitude;
                         },
                         () => {
                             handleLocationError(true, infoWindow, map.getCenter());
@@ -91,7 +84,6 @@
                 }
             });
         }
-        */
 
         function handleLocationError(browserHasGeolocation, infoWindow, pos) {
             infoWindow.setPosition(pos);
@@ -106,7 +98,7 @@
 </head>
 <body>
 <h1>Location</h1>
-
+<p id'="coords"></p> 
 <div id="map"></div>
 
 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
