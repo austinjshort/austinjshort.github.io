@@ -1,18 +1,17 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Location</title>
     <!-- Bootstrap CSS file -->
-     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">--!>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">--!>
     <style type="text/css">
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
         #map {
             height: 100%;
         }
-
         /* Optional: Makes the sample page fill the window. */
         html,
         body {
@@ -20,7 +19,6 @@
             margin: 0;
             padding: 0;
         }
-
         .custom-map-control-button {
             appearance: button;
             background-color: #fff;
@@ -45,7 +43,6 @@
         // locate you.
         var x = document.getElementById("coords"); 
         let map, infoWindow;
-
         function initMap() {
             map = new google.maps.Map(document.getElementById("map"), {
                 center: { lat: -34.397, lng: 150.644 },
@@ -71,7 +68,6 @@
                             infoWindow.setContent("Location found.");
                             infoWindow.open(map);
                             map.setCenter(pos);
-
                             x.innerHTML = "Latitude: " + position.coords.latitude + 
                             "<br>Longitude: " + position.coords.longitude;
                         },
@@ -85,7 +81,6 @@
                 }
             });
         }
-
         function handleLocationError(browserHasGeolocation, infoWindow, pos) {
             infoWindow.setPosition(pos);
             infoWindow.setContent(
@@ -98,7 +93,6 @@
     </script>
 </head>
 <body>
-<h1>Location</h1>
 <nav class="navbar navbar-expand-sm bg-light">
   <ul class="navbar-nav">
     <li class="nav-item">
@@ -116,10 +110,9 @@
   </ul>
 </nav>
 <br>
-
+<h1>Location</h1>
 <p id'="coords"></p> 
 <div id="map"></div>
-
 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk4pCtQA09fRqc0l1S9DhO84kVHP835tY&callback=initMap&libraries=&v=weekly"        
