@@ -14,10 +14,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/Homework4/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/Homework4/",
   "theme_color": "#3367D6",
   "orientation": "portrait-primary"
 }
