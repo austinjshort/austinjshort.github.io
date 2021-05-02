@@ -4,12 +4,12 @@
   "description": "Just doing what the project says",
   "icons": [
     {
-      "src": "https://austinjshort.github.io/Homework4/Assets/icon.png",
+      "src": "https://austinjshort.github.io/Assets/icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://austinjshort.github.io/Homework4/Assets/icon.png",
+      "src": "https://austinjshort.github.io/Assets/icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
