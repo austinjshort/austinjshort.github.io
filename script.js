@@ -53,3 +53,11 @@ if (window.location.protocol === 'http:') {
     link.href = window.location.href.replace('http://', 'https://');
     requireHTTPS.classList.remove('hidden');
 }
+
+
+function changeBackground(){
+    var url = "url('"
+    var background = document.getElementById("background").value;
+    url = url.concat(background).concat("')")
+    document.getElementById("body").style.backgroundImage = url;
+}
