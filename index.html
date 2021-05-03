@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" crossorigin="use-credentials" href="manifest.json"/>
-  <title>MyPWA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json"/>
+    <title>MyPWA</title>
 
 
 
@@ -15,16 +15,16 @@
 <h1>MyPWA</h1>
 
 <p id="requireHTTPS" class="hidden">
-  <b>STOP!</b> This page <b>must</b> be served over HTTPS.
-  Please <a>reload this page via HTTPS</a>.
+    <b>STOP!</b> This page <b>must</b> be served over HTTPS.
+    Please <a>reload this page via HTTPS</a>.
 </p>
 <form action="script.js">
-  <label for="background">Choose a background:</label>
-  <select id="background" onchange="changeBackground()">
-    <option value=Assets/lightblue.jpg"></option>
-    <option value="Assets/lightblue.jpg">Light Blue</option>
-    <option value="Assets/lightgold.jpg">Light Gold</option>
-  </select>
+    <label for="background">Choose a background:</label>
+    <select id="background" onchange="changeBackground()">
+        <option value=Assets/lightblue.jpg"></option>
+        <option value="Assets/lightblue.jpg">Light Blue</option>
+        <option value="Assets/lightgold.jpg">Light Gold</option>
+    </select>
 </form>
 
 
@@ -34,20 +34,12 @@
 <p>More stuff much stuff; to the moon</p>
 
 <!-- Install button, hidden by default -->
-<div id="installContainer">
-  <button id="butInstall" type="button">
-    Install
-  </button>
+<div id="installContainer" class="hidden">
+    <button id="butInstall" type="button">
+        Install
+    </button>
 </div>
 
 <script src="script.js" defer></script>
-<script type = text/javascript>
-  function changeBackground(){
-    var url = "url('"
-    var background = document.getElementById("background").value;
-    url = url.concat(background).concat("')")
-    document.getElementById("body").style.backgroundImage = url;
-  }
-</script>
 </body>
 </html>
