@@ -55,9 +55,4 @@ if (window.location.protocol === 'http:') {
 }
 
 
-function changeBackground(){
-    var url = "url('"
-    var background = document.getElementById("background").value;
-    url = url.concat(background).concat("')")
-    document.getElementById("body").style.backgroundImage = url;
-}
+
