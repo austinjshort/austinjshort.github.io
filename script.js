@@ -58,6 +58,12 @@ if (window.location.protocol === 'http:') {
 function changeBackground(){
     var url = "url('"
     var background = document.getElementById("background").value;
+    var stored = localStorage.background;
+    if(background == "" && background != stored) {
+        background = localStorage.background
+    }
     url = url.concat(background).concat("')")
     document.getElementById("body").style.backgroundImage = url;
+    //store the value
+    localStorage.background = background;
 }
