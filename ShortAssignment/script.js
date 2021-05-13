@@ -10,7 +10,6 @@ function changeText(){
     text = document.getElementById(textID).textContent;
     document.getElementById("displayHead").innerHTML =  head;
     document.getElementById("displayText").innerHTML = text;
-    document.set
     //store the value
     localStorage.display = display;
 }
