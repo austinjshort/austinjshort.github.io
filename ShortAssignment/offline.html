@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json"/>
+    <title>MyPWA</title>
+</head>
+<body id="body" onload="changeBackground()">
+<h1>MyPWA</h1>
+
+
+<form action="script.js">
+    <label for="background">Choose a background:</label>
+    <select id="background" onchange="changeBackground()">
+        <option value=""></option>
+        <option value="Assets/lightblue.jpg">Light Blue</option>
+        <option value="Assets/lightgold.jpg">Light Gold</option>
+    </select>
+</form>
+
+
+<p>This is an example of a Progressive Web Application or PWA. PWAs are applications that are built and served over
+    the web using HTML, Javascript, and CSS rather than traditional native apps that utilize languages such as Java or
+    Python. PWAs have several mechanisms that are used to bridge the gap in performance between an ordinary browser page
+    versus a native app.
+</p>
+<br><br>
+<p>The main techniques that allow PWAs to be made are Web Caching and Service Workers. Web caching, also referred to
+    as local storage allows for a large amount of data (approximately 5 MB) to be stored locally reducing the processing time
+    to request and load assets and pages. These assets are cached and checked by Service workers which are network proxies
+    that cant check server availability and cache content when it becomes available. All these features are mapped into the
+    manifest. The Manifest is a JSON file that contains the metadata for the application. It specifies what the app contains
+    and what the scope, contents, and offline content are available for the app.</p>
+
+<script src="script.js" defer></script>
+</body>
+</html>
