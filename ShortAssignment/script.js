@@ -2,7 +2,7 @@ function changeText(){
     var display = document.getElementById("display").value;
     var stored = localStorage.display;
     if(display == "" && display != stored) {
-        background = localStorage.background
+        background = localStorage.display;
     }
     headID = display.concat("Head");
     textID = display.concat("Body");
