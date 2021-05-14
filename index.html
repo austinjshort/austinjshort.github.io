@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json"/>
+    <title>MyPWA</title>
+
+
+
+</head>
+<body id="body" onload="changeText()">
+<h1>Hybrid Frameworks</h1>
+
+<form action="script.js">
+    <label for="display">Select a Hybrid Framework:</label>
+    <select id="display" onchange="changeText()">
+        <option value=""></option>
+        <option value="flutter">Flutter</option>
+        <option value="react">React Native</option>
+        <option value="phonegap">PhoneGap</option>
+        <option value="cordova">Cordova</option>
+    </select>
+</form>
+
+<h2 id="displayHead"></h2>
+<p id="displayText"></p>
+
+<h2 id="reactHead" class = hidden>React Native</h2>
+<p id="reactBody" class = hidden>Is an open source framework maintained by Facebook. The framework has been around since 2015 and has a large user
+base behind it and is very stable. It is built upon javascript and therefore is the most straight forward option for
+new developers. Furthermore any portion of an application that you want to port to a web page is easily transferred
+over directly. It is also the platform with the most developers and job opportunities associated with it.</p>
+
+<h2 id="flutterHead" class = hidden>Flutter</h2>
+<p id="flutterBody" class = hidden >Is a free open source development kit that is maintained by Google. Flutter utilizes the DART language that allows
+it to natively compile applications for iOS, android, web, and desktop from a single code base. One potential downside
+is that the development is specialized towards android and heavily leans on Android Studio for development. The main
+appeal for Flutter is that it is build upon a large library of widgets out of the box. </p>
+
+<h2 id="phonegapHead" class = hidden >PhoneGap</h2>
+<p id="phonegapBody" class = hidden >PhoneGap is effectively an implementation of Cordova, and open source software, with some additional items
+provided by the Adobe corporation. The software has been discontinued as of late 2020.</p>
+
+<h2 id="cordovaHead" class = hidden>Cordova</h2>
+<p id="cordovaBody" class = hidden>Cordova is the only truly open source framework as it is maintained under Apache license.
+Cordova allows for native execution of Javascript/HTML/CSS. Thanks to its open source status, there are several plugins
+available. One downside is having to have different development environments for each
+platform you seek to develop on. It is slower than other frameworks as well. </p>
+
+<h2 id="Head" class = hidden></h2>
+<p id="Body" class = hidden></p>
+
+
+<script src="script.js" defer></script>
+</body>
+</html>

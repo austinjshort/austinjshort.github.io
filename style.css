@@ -1,0 +1,26 @@
+body{
+    background-color: #96c8da;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a, a:visited {
+    color: black;
+}
+
+#displayHead {
+    text-align: center;
+
+}
+#displayText {
+    max-width: 800px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: snow;
+}
+
+.hidden {
+    display: none !important;
+}
